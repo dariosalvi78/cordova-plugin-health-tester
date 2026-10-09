@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="test.cordovatester" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Hello Cordova</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+
+    <platform name="android">
+        <preference name="android-minSdkVersion" value="26" />
+        <preference name="android-targetSdkVersion" value="37" />
+        <preference name="GradleVersion" value="9.3.1" />
+        <preference name="AndroidGradlePluginVersion" value="9.1.0" />
+
+        <config-file target="AndroidManifest.xml" parent="/*" xmlns:android="http://schemas.android.com/apk/res/android">
+            <uses-permission android:name="android.permission.health.READ_STEPS" />
+            <uses-permission android:name="android.permission.health.WRITE_STEPS" />
+            <uses-permission android:name="android.permission.health.READ_BASAL_BODY_TEMPERATURE" />
+            <uses-permission android:name="android.permission.health.WRITE_BASAL_BODY_TEMPERATURE" />
+            <uses-permission android:name="android.permission.health.READ_SKIN_TEMPERATURE" />
+            <uses-permission android:name="android.permission.health.WRITE_SKIN_TEMPERATURE" />
+            <uses-permission android:name="android.permission.health.READ_BODY_TEMPERATURE" />
+            <uses-permission android:name="android.permission.health.WRITE_BODY_TEMPERATURE" />
+            <uses-permission android:name="android.permission.health.READ_VO2_MAX" />
+            <uses-permission android:name="android.permission.health.WRITE_VO2_MAX" />
+            <uses-permission android:name="android.permission.health.READ_OXYGEN_SATURATION" />
+            <uses-permission android:name="android.permission.health.WRITE_OXYGEN_SATURATION" />
+            <uses-permission android:name="android.permission.health.READ_BLOOD_PRESSURE" />
+            <uses-permission android:name="android.permission.health.WRITE_BLOOD_PRESSURE" />
+            <uses-permission android:name="android.permission.health.READ_MENSTRUATION" />
+            <uses-permission android:name="android.permission.health.WRITE_MENSTRUATION" />
+            <uses-permission android:name="android.permission.health.READ_VO2_MAX" />
+            <uses-permission android:name="android.permission.health.WRITE_VO2_MAX" />
+            <uses-permission android:name="android.permission.health.READ_ACTIVITY_INTENSITY" />
+            <uses-permission android:name="android.permission.health.WRITE_ACTIVITY_INTENSITY" />
+        </config-file>
+    </platform>
+    
+
+</widget>

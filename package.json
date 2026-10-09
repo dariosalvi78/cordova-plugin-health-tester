@@ -1,0 +1,40 @@
+{
+  "name": "test.cordovatester",
+  "displayName": "Hello Cordova",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:android": "node scripts/android/run-tests.js",
+    "test:android:keep": "node scripts/android/run-tests.js --keep-emulator",
+    "test:android:setup": "node scripts/android/setup-avd.js",
+    "test:ios": "node scripts/ios/run-tests.js",
+    "test:ios:keep": "node scripts/ios/run-tests.js --keep-simulator",
+    "test:ios:setup": "node scripts/ios/setup-simulator.js"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^15.1.0",
+    "cordova-ios": "^8.1.1",
+    "cordova-plugin-health": "file:../cordova-plugin-health",
+    "ws": "^8.18.0"
+  },
+  "cordova": {
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-health": {
+        "HEALTH_CONNECT_CLIENT_VERSION": "1.2.0-alpha06",
+        "HEALTH_READ_PERMISSION": "App needs to read data",
+        "HEALTH_WRITE_PERMISSION": "App needs to write data"
+      }
+    }
+  }
+}
